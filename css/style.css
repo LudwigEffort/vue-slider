@@ -7,13 +7,14 @@
 .container{
     height: 100vh;
     max-width: 900px;
-    max-height: 700px;
+    max-height: 750px;
+    position: relative;
 }
 
 .slider-container {
     aspect-ratio: 16/9;
     background-color: antiquewhite;
-    position: relative;
+
 }
 
 .slider-container img {
@@ -21,6 +22,51 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.caption-container{
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 50;
+}
+
+.btns-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.btns-container div {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.btns-container i {
+    width: 20px;
+    height: 20px;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 20;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 20;
+}
+
+
+.btns-container div:hover {
+    background-color: lightcoral;
+    cursor: pointer;
 }
 
 .thumb-container {
